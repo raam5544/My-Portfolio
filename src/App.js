@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route index element={<Landingpage />} />
+        <Route path='/' element={<Landingpage />} />
       </Routes>
     </div>
   );

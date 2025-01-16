@@ -8,6 +8,8 @@ function Honeycomp() {
     // Generate the honeycomb cells
     const renderCells = () => {
         const cells = [];
+        const images =['./home.png','./1663653933402.jpg','./1663653933402.jpg']
+        let count = 0;
         for (let row = 0; row < rows; row++) {
             for (let col = 0; col < cols; col++) {
                 if (col == 0 && row == 0 || col == 2 && row == 0) {
@@ -22,12 +24,12 @@ function Honeycomp() {
                                 transform: `translate(${col * 160}px, ${row * 180 + (col % 2 === 0 ? 0 : 90)}px)`
                             }}
                         >
-                            {col === 1 && row === 1 ? (
-                                <img className="image" src={'./1663653933402.jpg'} alt="Honeycomb Image" />
-                            ) : null}
+                            <img className="image" src={images[count]} alt="Honeycomb Image" />
+
                         </div>
                     );
                 }
+                count++
             }
         }
         return cells;
