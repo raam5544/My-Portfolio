@@ -4,12 +4,13 @@ import './Honeycomp.css'
 function Honeycomp() {
     const rows = 3; // Number of rows in the honeycomb grid
     const cols = 3; // Number of columns in the honeycomb grid
+    let count = 0;
+    const images = [{ pic: './home.png', txt: 'Home' }, { pic: './notepad.png', txt: 'note' }, { pic: './1663653933402.jpg', txt: '' }, { pic: '/projects.png', txt: 'project' }, { pic: './home.png', txt: 'Home' }, { pic: './home.png', txt: 'Home' }, { pic: './home.png', txt: 'Home' }]
 
     // Generate the honeycomb cells
     const renderCells = () => {
         const cells = [];
-        const images =['./home.png','./1663653933402.jpg','./1663653933402.jpg']
-        let count = 0;
+
         for (let row = 0; row < rows; row++) {
             for (let col = 0; col < cols; col++) {
                 if (col == 0 && row == 0 || col == 2 && row == 0) {
@@ -24,8 +25,8 @@ function Honeycomp() {
                                 transform: `translate(${col * 160}px, ${row * 180 + (col % 2 === 0 ? 0 : 90)}px)`
                             }}
                         >
-                            <img className="image" src={images[count]} alt="Honeycomb Image" />
-
+                            <img className="image" src={images[count].pic} alt="Honeycomb Image" />
+                            <p className='text'>{images[count].txt}</p>
                         </div>
                     );
                 }
