@@ -1,0 +1,44 @@
+.honeycomb-container {
+    position: relative;
+    /* Adjust the width based on your needs */
+    /* Adjust the height based on your needs */
+    background-color: gray;
+    margin-top: -150px;
+    overflow: visible;
+}
+
+.honeycomb-cell {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    /* Color of honeycomb cells */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: ease;
+
+}
+
+.honeycomb-cell:hover {
+    /* Scale and rotate on hover */
+    background-color: #ff6600;
+    /* Change background color on hover */
+    cursor: pointer;
+    transform: translate(-10px, 10px);
+}
+    
+.odd {
+    /* Different color for odd row/column */
+    transition: width;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,80 @@
+.introContParent {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    height: 50vh;
+    width: 610px;
+    padding-right: 0px;
+    margin: 0%;
+    background-color: orange;
+    contain: content;
+    text-align: justify;
+    margin-left: -120px;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: row;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    color: green;
+}
+
+h4 {
+    margin: 0%;
+}
+
+h6 {
+    margin: 0%;
+}
+
+.introBody {
+    opacity: 0;
+    transform: translateY(-100px) rotate(0deg);
+    /* Start position (above) */
+    animation: fall 1s ease forwards;
+    margin: 0 1px;
+    /* Spacing between letters */
+    /* background-color: blueviolet; */
+
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px) rotate(-90deg);
+        /* Starting position (high up, rotated) */
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(10px) rotate(15deg);
+        /* Mid-point: slight overshoot for bounce */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+        /* Final position (normal) */
+    }
+}
+
+.btnClickMoreParent {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btnClickMore {
+    padding: 10px 20px;
+
+}
+
+.btnClickMore:hover {
+    border-radius: 20%;
+    cursor: pointer;
+}

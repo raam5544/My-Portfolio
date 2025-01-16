@@ -1,0 +1,68 @@
+.navBody {
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+    height: fit-content;
+    justify-content: end;
+    align-items: center;
+}
+
+.navLink {
+    margin: 10px;
+    background-color: aqua;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.active {
+    background-color: blueviolet;
+}
+
+.homeLogo {
+    height: 35px;
+    width: 35px;
+    margin-left: 15px;
+}
+
+.navHumbPar {
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchLogo {
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+    background-blend-mode: multiply;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 2px;
+    padding: 5px 45px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchBar button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,14 @@
+.landingBody {
+    /* background-color: #161616; */
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+
+}
+.introDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 180px;
+}
