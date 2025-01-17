@@ -26,7 +26,8 @@
     background-color: #ff6600;
     /* Change background color on hover */
     cursor: pointer;
-    transform: translate(-10px, 10px);
+    transform: translate(-10px, 100px);
+    border: solid white;
 }
 
 .odd {
@@ -41,6 +42,7 @@
 .image {
     height: 100%;
     width: 100%;
+    background: transparent;
 }
 
 .img:hover {

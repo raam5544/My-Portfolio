@@ -5,7 +5,7 @@ function Honeycomp() {
     const rows = 3; // Number of rows in the honeycomb grid
     const cols = 3; // Number of columns in the honeycomb grid
     let count = 0;
-    const images = [{ pic: './home.png', txt: 'Home' }, { pic: './notepad.png', txt: 'note' }, { pic: './1663653933402.jpg', txt: '' }, { pic: '/projects.png', txt: 'project' }, { pic: './home.png', txt: 'Home' }, { pic: './home.png', txt: 'Home' }, { pic: './home.png', txt: 'Home' }]
+    const images = [{ pic: './about.jpg', txt: 'About' }, { pic: './notepad.png', txt: 'note' }, { pic: './1663653933402.jpg', txt: '' }, { pic: '/projects.png', txt: 'project' }, { pic: './home.png', txt: 'Home' }, { pic: './home.png', txt: 'Home' }, { pic: './home.png', txt: 'Home' }]
 
     // Generate the honeycomb cells
     const renderCells = () => {
