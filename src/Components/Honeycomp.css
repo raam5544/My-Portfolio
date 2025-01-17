@@ -12,7 +12,7 @@
     width: 150px;
     height: 150px;
     margin-left: 100px;
-    background-color: #ffcc00;
+    background-color: white;
     display: flex;
     justify-content: center;
     /* Color of honeycomb cells */
@@ -23,7 +23,6 @@
 
 .honeycomb-cell:hover {
     /* Scale and rotate on hover */
-    background-color: #ff6600;
     /* Change background color on hover */
     cursor: pointer;
     transform: translate(-10px, 100px);
