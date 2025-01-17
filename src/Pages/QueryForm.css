@@ -1,0 +1,14 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding: 20px;
+}
+
+.queryFormInp{
+    border: solid black;
+    margin-left: 20px;
+    
+}

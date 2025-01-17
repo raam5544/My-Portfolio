@@ -1,5 +1,6 @@
 import React from 'react'
 import './Honeycomp.css'
+import { Link } from 'react-router-dom';
 
 function Honeycomp() {
     const rows = 3; // Number of rows in the honeycomb grid
@@ -18,15 +19,17 @@ function Honeycomp() {
                 }
                 else {
                     cells.push(
-                        <div
-                            key={`${row}-${col}`}
-                            className={`honeycomb-cell`}
-                            style={{
-                                transform: `translate(${col * 160}px, ${row * 180 + (col % 2 === 0 ? 0 : 90)}px)`
-                            }}
-                        >
-                            <img className="image" src={images[count].pic} alt="Honeycomb Image" title={images[count].txt} />
-                        </div>
+                        <Link to={"/QueryForm"}>
+                            <div
+                                key={`${row}-${col}`}
+                                className={`honeycomb-cell`}
+                                style={{
+                                    transform: `translate(${col * 160}px, ${row * 180 + (col % 2 === 0 ? 0 : 90)}px)`
+                                }}
+                            >
+                                <img className="image" src={images[count].pic} alt="Honeycomb Image" title={images[count].txt} />
+                            </div>
+                        </Link>
                     );
                 }
                 count++
