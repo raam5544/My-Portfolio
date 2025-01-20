@@ -4,6 +4,7 @@ import Introduction from '../Components/Introduction'
 import Honeycomp from '../Components/Honeycomp'
 import Footer from '../Components/Footer'
 
+
 function Landingpage() {
     return (
         <div className='landingBody'>

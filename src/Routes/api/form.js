@@ -3,9 +3,7 @@ const router = express.Router();
 const formCtrl = require('../../Controllers/api/formController');
 
 // GET /api/items
-router.post('/', (req, res) => {
-    console.log(req.body)
-});
+router.post('/', formCtrl.saveData);
 // GET /api/items/:id
 // router.get('/:id', itemsCtrl.show);
 

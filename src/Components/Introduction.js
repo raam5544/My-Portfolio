@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Introduction.css'
 
+
 function Introduction() {
     let name_text = "Hi,\t\t I'm \Raamakrishnan \t\tJeyaraman \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFront End Developer"
     let arr_name = Array.from(name_text)
@@ -14,7 +15,9 @@ function Introduction() {
     }
     return (
         <div className='introContParent'>
+
             <div className='introContainer'>
+                <div class="letter-by-letter">Hello, World!</div>
                 {arr_name.map((e, index) => {
                     return (
                         <div className='introBody' key={index} style={{ animationDelay: `${index * 0.1}s` }}>

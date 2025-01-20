@@ -78,3 +78,13 @@ h6 {
     border-radius: 20%;
     cursor: pointer;
 }
+
+.letter-by-letter {
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(14) 1s forwards;
+    color: brown;
+}

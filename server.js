@@ -1,5 +1,5 @@
 // ----------------------------[Requires]
-
+const connectDB = require('./src/Config/db');
 const express = require("express");
 const bodyParser = require('body-parser')
 
@@ -10,6 +10,7 @@ const form = require('./src/Routes/api/form')
 const port = 3001;  
 const app = express();
 // ----------------------------[Middleware]
+connectDB()
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // parse application/json
