@@ -1,18 +1,66 @@
 .honeycomb-container {
     position: relative;
     width: fit-content;
+    min-width: 150px; /* Ensure visibility */
+    min-height: 150px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start ;
-    background-color: green;
+    justify-content: flex-start;
     clip-path: polygon(
         50% 0%, 93% 25%, 93% 75%, 
         50% 100%, 7% 75%, 7% 25%
     );
+    padding: 4px; /* Space for pseudo-element */
+    animation: outlinePulse 2s infinite ease-in-out;
+    border-radius: solid 2px #00ff00;
+
 }
 
-.honeycomb-cell {
+.honeycomb-container::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    z-index: -1;
+    clip-path: polygon(
+        50% 0%, 93% 25%, 93% 75%, 
+        50% 100%, 7% 75%, 7% 25%
+    );
+    border: 3px solid #00ff00;
+    animation: borderPulse 2s infinite ease-in-out;
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: #00ff00;
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        border-color: #00cc00;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+    }
+    100% {
+        border-color: #00ff00;
+        box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+}
+
+@keyframes outlinePulse {
+    0% {
+        outline-color: #00ff00;
+    }
+    50% {
+        outline-color: #00cc00;
+    }
+    100% {
+        outline-color: #00ff00;
+    }
+}
+
+/* .honeycomb-cell {
     position: absolute;
     width: 140px;
     height: 140px;
@@ -28,7 +76,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}
+} */
 
 .honeycomb-cell:hover {
     transform: scale(1.05);

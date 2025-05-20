@@ -3,7 +3,7 @@ import './Introduction.css'
 
 
 function Introduction() {
-            const name_text = "Hi, I'm Raamakrishnan Jeyaraman";
+            const name_text = "I'm Raamakrishnan Jeyaraman";
             const arr_name = Array.from(name_text);
             const title = "Trainee Full Stack Developer";
             const arr_title = Array.from(title);

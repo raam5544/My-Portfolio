@@ -11,7 +11,7 @@ function Navbar() {
         <div className='navBody'>
             {/* <NavLink to='/'><img className='homeLogo' src='/home.png' /></NavLink> */}
             <NavLink to='/' className='navLink'>Home</NavLink>
-            <NavLink to='/about_me' className='navLink'>About Me</NavLink>
+            <NavLink to='/skills' className='navLink'>Skills</NavLink>
             <NavLink to='/projects' className='navLink'>Projects</NavLink>
             <Hamburger toggled={isOpen} toggle={setOpen} />
         </div> : <div className='navHumbPar'>

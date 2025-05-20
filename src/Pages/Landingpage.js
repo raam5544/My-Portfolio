@@ -4,6 +4,7 @@ import Introduction from '../Components/Introduction'
 import Honeycomp from '../Components/Honeycomp'
 import Footer from '../Components/Footer'
 import Skills from '../Components/Skills'
+import Portfolio from '../Components/Portfolio'
 
 
 function Landingpage() {
@@ -14,6 +15,7 @@ function Landingpage() {
                 <div><Honeycomp /></div>
             </div>
             <div className='skillsContainer'><Skills /></div>
+            <div className='skillsContainer'><Portfolio /></div>
             <div className='footerContainer'><Footer /></div>
         </div>
     )
