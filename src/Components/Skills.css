@@ -1,0 +1,18 @@
+.skillsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    border: solid 2px #c76161;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.skill{
+    height: 200px;
+    width: 250px;
+    border: solid 2px #c76161;
+    border-radius: 15px;
+    margin: 5px;
+}

@@ -5,7 +5,7 @@ import './Introduction.css'
 function Introduction() {
             const name_text = "Hi, I'm Raamakrishnan Jeyaraman";
             const arr_name = Array.from(name_text);
-            const title = "Front End Developer";
+            const title = "Trainee Full Stack Developer";
             const arr_title = Array.from(title);
             const para = "With a strong background in both front-end and back-end development, I am equipped to create seamless, scalable, and responsive web applications that provide a fantastic user experience. From building dynamic UIs to managing server-side logic and databases, I handle every layer of the development process";
             const [more, setMore] = useState(true);
