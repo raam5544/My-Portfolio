@@ -1,6 +1,6 @@
 .footerCont {
     background-color: aqua;
-    position: absolute;
+    position: relative;
     width: 100vw;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }

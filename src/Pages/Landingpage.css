@@ -4,12 +4,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 100vw;
-    background-color: white;
-
+    /* background-color: white; */
+    background-color: yellow;
+    contain: content;
 }
 .introDiv{
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    background-color: gray;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-right: 205px; */
+    align-items: center;
 }

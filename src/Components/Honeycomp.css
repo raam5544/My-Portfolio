@@ -1,10 +1,15 @@
 .honeycomb-container {
     position: relative;
     width: fit-content;
-    margin: 60px auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start ;
+    background-color: green;
+    clip-path: polygon(
+        50% 0%, 93% 25%, 93% 75%, 
+        50% 100%, 7% 75%, 7% 25%
+    );
 }
 
 .honeycomb-cell {
@@ -15,8 +20,8 @@
         50% 0%, 93% 25%, 93% 75%, 
         50% 100%, 7% 75%, 7% 25%
     );
-    background-color: #f5f5f5;
-    border: 2px solid #ccc;
+    background-color: green;
+    border: 2px solid #c76161;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     display: flex;
@@ -41,7 +46,7 @@
     position: absolute;
     bottom: 8px;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: black;
     padding: 4px 8px;
     font-size: 0.8rem;
     border-radius: 6px;

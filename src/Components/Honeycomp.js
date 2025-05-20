@@ -29,7 +29,7 @@ function Honeycomp() {
                         <div
                             className="honeycomb-cell"
                             style={{
-                                transform: `translate(${col * 160}px, ${row * 140 + (col % 2 === 0 ? 0 : 70)}px)`
+                                transform: `translate(${col * 160}px, ${row * 140 + (col % 2 === 0 ? 0 : -20)}px)`
                             }}
                         >
                             <img
@@ -48,7 +48,7 @@ function Honeycomp() {
         return cells;
     };
 
-    return <div className="honeycomb-container">{renderCells()}</div>;
+    return <div className="honeycomb-container"><img src='./1663653933402.jpg'/></div>;
 }
 
 export default Honeycomp;
