@@ -1,28 +1,23 @@
 import React from 'react';
-import './Skills.css';
+import './Portfolio.css';
 
 function Portfolio() {
     const skills = [
-        { name: 'HTML', level: 'Intermediate',symbol: 'html5'},
-        { name: 'CSS', level: 'Intermediate',symbol: 'css3' },
-        { name: 'Java', level: 'Intermediate',symbol: 'java' },
-        { name: 'Python', level: 'Intermediate',symbol: 'python' },
-        { name: 'JavaScript', level: 'Intermediate',symbol: 'javaScript' },
-        { name: 'React', level: 'Intermediate',symbol: 'react' },
-        { name: 'Node.js', level: 'Intermediate',symbol: 'nodejs' },
-        { name: 'Express.js', level: 'Intermediate',symbol: 'express' },
-        { name: 'MongoDB', level: 'Intermediate',symbol: 'mongodb' },
-        { name: 'GitHub', level: 'Intermediate',symbol: 'github' }
+        { name: 'E-Commerce Website', description: 'Implemented My daily tasks planner web application with \n JWT authentication | CRUD To-Dos \nUsed: React Js, Node with Express Js, MongoDB, (MERN)', symbol: '../authpage.png' },
+
+        { name: 'DOM Based Game', description: 'Developed an interactive game using JavaScript DOM manipulation, HTML and CSS to create dynamic elements, user interaction, and engaging visual effects',symbol: '../domGame.png' },
+        { name: 'Personal Website', description: 'Created my Portfolio website Used: React JS, TailWind CSS, and JavaScript',symbol: '../portfolio.png' },
+        { name: 'Python', level: 'Intermediate',symbol: '../authpage.png' }
     ];
     return (
-        <div className="skillsContainer">
-            <h2>Skills</h2> 
-            <div className="skillsGrid">
+        <div className="portfolioContainer">
+            <h2>Portfolio</h2> 
+            <div className="portfolioGrid">
             {skills.map((skill)=>
-                <div key={skill.name} className="skill">
-                    {/* <h3>{skill.name}</h3> */}
-                    <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.symbol}/${skill.symbol}-original-wordmark.svg`} alt={skill.name} />
-                    {/* <p>{skill.level}</p> */}
+                <div key={skill.name} className="portfolio">
+                    <h3>{skill.name}</h3>
+                    <img src={skill.symbol} alt={skill.name} />
+                    <p>{skill.description}</p>
                 </div>
             )}
             </div>
