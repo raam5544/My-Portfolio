@@ -5,11 +5,11 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100vw;
-    background-color: aqua;
+    background-color: white;
 
 }
 .introDiv{
     display: flex;
     flex-direction: row;
-    margin-left: 180px;
+    margin-left: 100px;
 }
