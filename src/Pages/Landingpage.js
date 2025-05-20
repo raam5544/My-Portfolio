@@ -5,6 +5,7 @@ import Honeycomp from '../Components/Honeycomp'
 import Footer from '../Components/Footer'
 import Portfolio from '..//Components/Portfolio'
 import Skills from '../Components/Skills'
+import QueryForm from '../Components/QueryForm'
 // import './Landingpage.css'   
 
 
@@ -17,7 +18,9 @@ function Landingpage() {
             </div>
             <div className='skillsContainer'><Skills/></div>
             <div className='skillsContainer'><Portfolio /></div>
+            <div><QueryForm/></div>
             <div className='footerContainer'><Footer /></div>
+            
         </div>
     )
 }
