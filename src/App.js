@@ -5,6 +5,8 @@ import Landingpage from './Pages/Landingpage';
 import Navbar from './Components/Navbar';
 import QueryForm from './Pages/QueryForm';
 import Skills from './Components/Skills';
+import Portfolio from './Components/Portfolio';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <Routes>
         <Route index element={<Landingpage />} />
         <Route path='/' element={<Landingpage />} />
-        <Route path='/QueryForm' element={<QueryForm/>} />
+        <Route path='/queries' element={<QueryForm/>} />
         <Route path='/skills' element={<Skills/>} />
+        <Route path='/projects' element={<Portfolio/>} />
+        <Route path='/contact' element={<Footer/>} />
       </Routes>
     </div>
   );

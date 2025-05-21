@@ -13,6 +13,8 @@ function Navbar() {
             <NavLink to='/' className='navLink'>Home</NavLink>
             <NavLink to='/skills' className='navLink'>Skills</NavLink>
             <NavLink to='/projects' className='navLink'>Projects</NavLink>
+            <NavLink to='/queries' className='navLink'>Queries</NavLink>
+            <NavLink to='/contact' className='navLink'>Contact</NavLink>
             <Hamburger className='hamburger' toggled={isOpen} toggle={setOpen} />
         </div> : <div className='navHumbPar'>
             <Link to='/'><img className='homeLogo' src='/home.png' /></Link>

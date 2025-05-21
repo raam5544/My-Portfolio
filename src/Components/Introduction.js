@@ -11,7 +11,7 @@ function Introduction() {
             const para = "With a strong background in both front-end and back-end development, I am equipped to create seamless, scalable, and responsive web applications that provide a fantastic user experience. From building dynamic UIs to managing server-side logic and databases, I handle every layer of the development process";
             const [more, setMore] = useState(true);
             const [text] = useTypewriter({
-                words: ['Trainee Full Stack Developer', 'React JS Developer', 'MERN Stack Developer'],
+                words: ['Trainee Full Stack Developer', 'Coder', 'Fin-Tech Enthusiast', 'Tech Explorer'],
                 loop: 0,
                 typeSpeed: 70,
                 deleteSpeed: 50,

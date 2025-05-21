@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     /* margin: 5px; */
-    border: solid 2px #c76161;
+    /* border: solid 2px #c76161; */
     justify-content: center;
     height: 100vh;
     background-color: black;
@@ -15,9 +15,10 @@
 .portfolio{
     height: 250px;
     width: 500px;
-    border: solid 2px #c76161;
+    /* border: solid 2px #c76161; */
     border-radius: 15px;
     margin: 5px 15px;   
+    box-shadow: blue 0px 0px 10px 0px;
 }
 
 .portfolio img{
@@ -33,13 +34,14 @@
     transition: 0.5s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    box-shadow: red 0px 0px 10px 10px;
 }
 
 .portfolioGrid{
     display: flex;
     flex-direction: row;
     /* height: max-content; */
-    border: solid 2px green;
+    /* border: solid 2px green; */
     flex-wrap: wrap;
     justify-content: center;
     height: 100%;
