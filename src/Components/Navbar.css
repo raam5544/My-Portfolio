@@ -1,10 +1,10 @@
 .navBody {
     display: flex;
     flex-direction: row;
-    /* background-color: yellow; */
     height: fit-content;
     justify-content: end;
     align-items: center;
+    /* background-image: conic-gradient(from 0deg, #ff0000, #00ff00, #0000ff); */
 }
 
 .navLink {
@@ -65,4 +65,14 @@ input:focus {
     background-color: transparent;
     outline: none;
     border: none;
+}
+
+.hamburger {
+    display: none;
+    background-color: black;
+}
+
+.navHumbPar{
+    /* background-color: blue; */
+    /* color: white; */
 }

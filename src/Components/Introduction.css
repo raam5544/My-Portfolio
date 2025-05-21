@@ -56,13 +56,48 @@ body {
             color: #ffffff;
         }
         .introContParent {
+            position: relative;
             max-width: 500px;
             padding: 10px;
-            text-align: left;
-            background: rgba(227, 222, 222, 0.24);
+            text-align: center;
+            /* background: rgba(227, 222, 222, 0.24); */
+            /* background: ghostwhite; */
+
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgb(1, 1, 249);
+            /* z-index: -4; */
         }
+
+        .introContParent::before, .introContParent::after  {
+            --angle:0deg;
+            position: absolute;
+            content: '';
+            z-index: -1;
+            background-image: conic-gradient(from var(--angle),transparent 80%,#ebd861, #e1d8a1);
+            /* border: solid 2px #00ccff; */
+            inset: -20px;
+            animation:  20s spinLeft linear infinite;
+            transform: rotate-(var(--angle));
+            border-radius: 12px;
+        }
+
+        .introContParent::after {
+            filter: blur(1rem);
+            opacity: 2;
+        }
+
+        @keyframes spinLeft{
+            from {
+                --angle: 0deg;
+            }
+            to {
+                --angle: 360deg;
+            }
+        }
+
+
+
+
         .introContainer {
             margin-bottom: 15px;
         }

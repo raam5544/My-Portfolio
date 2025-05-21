@@ -16,7 +16,7 @@ function QueryForm() {
         });
     }
     return (
-        <div>
+        <div className='queryFormContainer'>
             <h2>Contact Me</h2>
             <form onSubmit={handleSubmit(onSubmit)} action='/Q' method='GET'>
                 <label>Enter your name:
