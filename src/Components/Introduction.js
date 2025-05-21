@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Introduction.css'
+import {useTypewriter,Cursor} from 'react-simple-typewriter'
 
 
 function Introduction() {
@@ -9,6 +10,13 @@ function Introduction() {
             const arr_title = Array.from(title);
             const para = "With a strong background in both front-end and back-end development, I am equipped to create seamless, scalable, and responsive web applications that provide a fantastic user experience. From building dynamic UIs to managing server-side logic and databases, I handle every layer of the development process";
             const [more, setMore] = useState(true);
+            const [text] = useTypewriter({
+                words: ['Trainee Full Stack Developer', 'React JS Developer', 'MERN Stack Developer'],
+                loop: 0,
+                typeSpeed: 70,
+                deleteSpeed: 50,
+                delaySpeed: 1000
+            });
 
             function clickMore() {
                 setMore(!more);
@@ -28,9 +36,9 @@ function Introduction() {
                             </div>
                         ))}
                     </div>
-
+                    
                     <div className="introContainer">
-                        {arr_title.map((e, index) => (
+                        {/* {arr_title.map((e, index) => (
                             <div
                                 className="titleBody"
                                 key={index}
@@ -38,7 +46,11 @@ function Introduction() {
                             >
                                 {e === " " ? <span>&nbsp;</span> : e}
                             </div>
-                        ))}
+                        ))} */}
+                        <div className="titleBody">
+                            {text}
+                            <Cursor cursorColor='red' />
+                        </div>
                     </div>
 
                     <div className={`para ${more ? 'hidden' : ''}`}>
