@@ -1,93 +1,66 @@
+/* .honeyComp::after{
+    --angle : 0deg;
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background-color: rgba(36, 209, 30, 0.845);
+    z-index: 1;
+} */
+
+
 .honeycomb-container {
     position: relative;
-    width: fit-content;
-    min-width: 150px; /* Ensure visibility */
-    min-height: 150px;
+    background-color: gray;
+
+    /* width: fit-content; */
+    width: 350px; /* Ensure visibility */
+    height: 350px;
     margin: auto;
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
-    justify-content: flex-start;
-    clip-path: polygon(
+    justify-content: center;
+    align-items: center;
+    /* clip-path: polygon(
         50% 0%, 93% 25%, 93% 75%, 
         50% 100%, 7% 75%, 7% 25%
-    );
-    padding: 4px; /* Space for pseudo-element */
-    animation: outlinePulse 2s infinite ease-in-out;
-    border-radius: solid 2px #00ff00;
+    ); */
+    /* border: solid 2px #eb3131; */
+}
 
+.honeycomb-container::before,.honeycomb-container::after {
+    --angle : 0deg;
+    content: '';
+    position: absolute;
+    inset: -5px;
+    background-image: conic-gradient(transparent 60% , blue);
+    z-index: -1;
+
+    /* border: solid 10px #eb3131; */
 }
 
 .honeycomb-container::before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    z-index: -1;
-    clip-path: polygon(
-        50% 0%, 93% 25%, 93% 75%, 
-        50% 100%, 7% 75%, 7% 25%
-    );
-    border: 3px solid #00ff00;
-    animation: borderPulse 2s infinite ease-in-out;
+    filter: blur(1.5rem);
 }
 
-@keyframes borderPulse {
-    0% {
-        border-color: #00ff00;
-        box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
-    }
-    50% {
-        border-color: #00cc00;
-        box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
-    }
-    100% {
-        border-color: #00ff00;
-        box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
-    }
-}
 
-@keyframes outlinePulse {
-    0% {
-        outline-color: #00ff00;
-    }
-    50% {
-        outline-color: #00cc00;
-    }
-    100% {
-        outline-color: #00ff00;
-    }
-}
-
-/* .honeycomb-cell {
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    clip-path: polygon(
-        50% 0%, 93% 25%, 93% 75%, 
-        50% 100%, 7% 75%, 7% 25%
-    );
-    background-color: green;
-    border: 2px solid #c76161;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-} */
 
 .honeycomb-cell:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.honeycomb-image {
+.honeyCombImg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     transition: opacity 0.3s;
+    /* object-fit: cover; */
+    /* clip-path: polygon(
+        50% 0%, 93% 25%, 93% 75%, 
+        50% 100%, 7% 75%, 7% 25%
+    ); */
+    padding: 0%;
+    margin: 0%;
 }
 
 .honeycomb-label {

@@ -20,6 +20,7 @@
     /* margin-right: 205px; */
     align-items: center;
     height: 100vh;
+    z-index: -2;
 }
 
 .skillsContainer{

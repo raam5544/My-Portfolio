@@ -14,7 +14,7 @@ function Landingpage() {
         <div className='landingBody'>
             <div className='introDiv'>
                 <div><Introduction/></div>
-                <div><Honeycomp /></div>
+                <div className='honeyComp'><Honeycomp /></div>
             </div>
             <div className='skillsContainer'><Skills/></div>
             <div className='skillsContainer'><Portfolio /></div>
