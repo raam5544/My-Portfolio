@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 function Portfolio() {
     const skills = [
-        { name: 'E-Commerce Website', description: 'Implemented My daily tasks planner web application with \n JWT authentication | CRUD To-Dos \nUsed: React Js, Node with Express Js, MongoDB, (MERN)', symbol: '../authpage.png' },
+        { name: 'E-Commerce Website', description: 'Implemented E-commerce web application with \n JWT authentication | CRUD To-Dos \nUsed: React Js, Node with Express Js, MongoDB, (MERN)', symbol: '../authpage.png' },
 
         { name: 'DOM Based Game', description: 'Developed an interactive game using JavaScript DOM manipulation, HTML and CSS to create dynamic elements, user interaction, and engaging visual effects',symbol: '../domGame.png' },
         { name: 'Personal Website', description: 'Created my Portfolio website \nUsed: React JS, TailWind CSS, and JavaScript',symbol: '../portfolio.png' },
