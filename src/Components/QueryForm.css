@@ -4,7 +4,7 @@ form {
     /* background-color: #ffffff; */
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 50px blue;
     width: 700px;
     margin: 0 auto;
     align-items: center;
@@ -44,6 +44,8 @@ label {
     align-items: center;
     justify-content: center;
     width: 100%;
+    color: black;
+    background-color: whitesmoke;
 }
 
 button{

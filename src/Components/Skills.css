@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    /* margin: 5px; */
-    /* border: solid 2px #c76161; */
-    justify-content: center;
+    margin: 0;    /* border: solid 2px #c76161; */
+    justify-content: space-around;
     height: 100vh;
     background-color: whitesmoke;
+    color: black;
 }
 
 .skill{

@@ -18,7 +18,7 @@ function Landingpage() {
             </div>
             <div className='skillsContainer'><Skills/></div>
             <div className='portfolioContainer'><Portfolio /></div>
-            <div><QueryForm/></div>
+            <div className='query'><QueryForm/></div>
             <div className='footerContainer'><Footer /></div>
             
         </div>

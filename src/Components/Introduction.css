@@ -99,7 +99,7 @@ body {
 
 
         .introContainer {
-            margin-bottom: 15px;
+            /* margin-bottom: 15px; */
         }
         .hello-world {
             font-size: 2.8rem;
@@ -165,3 +165,4 @@ body {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        

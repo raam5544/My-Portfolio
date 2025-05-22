@@ -3,7 +3,7 @@ import './App.css';
 import { Router, Routes, Route } from 'react-router-dom';
 import Landingpage from './Pages/Landingpage';
 import Navbar from './Components/Navbar';
-import QueryForm from './Pages/QueryForm';
+import QueryForm from './Components/QueryForm';
 import Skills from './Components/Skills';
 import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
